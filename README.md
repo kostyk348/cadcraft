@@ -199,24 +199,16 @@ The logger is `apps/cadcraft/src/logging.rs`; the web build logs to the browser 
 
 ```sh
 # MCP server on stdio, headless:
-
-[![CI](https://github.com/kostyk348/cadcraft/actions/workflows/packaging-lint.yml/badge.svg)](https://github.com/kostyk348/cadcraft/actions/workflows/packaging-lint.yml)
-[![Release](https://img.shields.io/github/v/release/kostyk348/cadcraft?sort=semver&color=blue)](https://github.com/kostyk348/cadcraft/releases)
-[![Last commit](https://img.shields.io/github/last-commit/kostyk348/cadcraft?branch=main)](https://github.com/kostyk348/cadcraft/commits/main)
-
 cadcraft-cli mcp
 # …or bridged to the running app (start it with --control 7979):
-
 cadcraft-cli mcp --connect 127.0.0.1:7979
 
 # One-shot headless runs:
-
 cadcraft-cli run --sample --script 'CIRCLE 22,3 1\n' --save out.dxf --export out.png
 cadcraft-cli info drawing.dxf
 cadcraft-cli convert drawing.dxf drawing.svg
 
 # Frame part of the drawing (model space, drawing units, lower-left corner first):
-
 cadcraft-cli convert drawing.dwg detail.png --window 0,0,20000,15000
 cadcraft-cli run drawing.dwg --cmd 'zoom {"mode":"window","p1":[0,0],"p2":[20000,15000]}' --export detail.png
 cadcraft-cli run drawing.dwg --cmd 'select {"window":[[0,0],[20000,15000]]}' --cmd 'zoom {"mode":"object"}' --export sel.png
