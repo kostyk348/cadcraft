@@ -202,7 +202,6 @@ The logger is `apps/cadcraft/src/logging.rs`; the web build logs to the browser 
 
 [![CI](https://github.com/kostyk348/cadcraft/actions/workflows/packaging-lint.yml/badge.svg)](https://github.com/kostyk348/cadcraft/actions/workflows/packaging-lint.yml)
 [![Release](https://img.shields.io/github/v/release/kostyk348/cadcraft?sort=semver&color=blue)](https://github.com/kostyk348/cadcraft/releases)
-[![License](https://img.shields.io/badge/license-Apache-2.0-green)](https://github.com/kostyk348/cadcraft/blob/main/LICENSE)
 [![Last commit](https://img.shields.io/github/last-commit/kostyk348/cadcraft?branch=main)](https://github.com/kostyk348/cadcraft/commits/main)
 
 cadcraft-cli mcp
